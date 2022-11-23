@@ -1,0 +1,317 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #191919;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.columnlogin{
+ @apply font-semibold lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] text-gray_600 tracking-ls1 w-[auto]; 
+}
+.TextFieldLa{
+ @apply font-semibold p-[0] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-gray_600 w-[100%]; 
+}
+.columnlinethree{
+ @apply font-semibold lg:mt-[25px] xl:mt-[32px] 2xl:mt-[36px] 3xl:mt-[43px] text-gray_600 tracking-ls1 w-[auto]; 
+}
+.rowduplexhouse{
+ @apply font-bold mb-[1px] text-gray_900 w-[auto]; 
+}
+.sort{
+ @apply lg:h-[15px] xl:h-[18px] 2xl:h-[21px] 3xl:h-[25px] mt-[1px] lg:w-[14px] xl:w-[17px] 2xl:w-[20px] 3xl:w-[24px]; 
+}
+.process{
+ @apply lg:mb-[18px] xl:mb-[23px] 2xl:mb-[26px] 3xl:mb-[31px] lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] lg:mt-[20px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.refresh{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] lg:w-[21px] xl:w-[26px] 2xl:w-[30px] 3xl:w-[36px]; 
+}
+.process1{
+ @apply lg:mb-[14px] xl:mb-[17px] 2xl:mb-[20px] 3xl:mb-[24px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.price_One{
+ @apply lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.arrowright{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.CommercialProp{
+ @apply font-bold lg:ml-[21px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] text-gray_400 w-[auto]; 
+}
+.grideye{
+ @apply bg-gray_51 border border-red_101 border-solid justify-start lg:pb-[21px] xl:pb-[26px] 2xl:pb-[30px] 3xl:pb-[36px] rounded-radius10 w-[100%]; 
+}
+.image_One{
+ @apply lg:h-[185px] xl:h-[232px] 2xl:h-[261px] 3xl:h-[313px] rounded-bl-[0] rounded-br-[0] rounded-tl-[10px] rounded-tr-[10px] w-[100%]; 
+}
+.location1{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-gray_900 w-[auto]; 
+}
+.test_3BedRoom{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-gray_700 w-[auto]; 
+}
+.bookmark{
+ @apply lg:h-[15px] xl:h-[18px] 2xl:h-[21px] 3xl:h-[25px] lg:w-[14px] xl:w-[17px] 2xl:w-[20px] 3xl:w-[24px]; 
+}
+.rowview_details{
+ @apply font-bold lg:ml-[22px] xl:ml-[27px] 2xl:ml-[31px] 3xl:ml-[37px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.RectangleTwenty_One{
+ @apply absolute lg:h-[419px] xl:h-[524px] 2xl:h-[590px] 3xl:h-[708px] right-[0] rounded-radius10 top-[0] w-[91%]; 
+}
+.point{
+ @apply font-semibold xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] text-gray_900 w-[auto]; 
+}
+.ButtonAnchor1{
+ @apply font-bold lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] text-gray_602 w-[auto]; 
+}
+.blog{
+ @apply font-bold leading-[135.00%] lg:mt-[17px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] text-white_A700 tracking-ls1 w-[100%]; 
+}
+.image_Thirteen{
+ @apply lg:h-[249px] xl:h-[312px] 2xl:h-[351px] 3xl:h-[421px] rounded-radius10 w-[100%]; 
+}
+.arrowright_Three{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.input{
+ @apply font-semibold p-[0] xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-gray_700 w-[100%]; 
+}
+.columnstaticmania{
+ @apply font-manrope font-semibold ml-[4px] xl:mt-[106px] 2xl:mt-[120px] 3xl:mt-[144px] lg:mt-[85px] text-gray_900 w-[auto]; 
+}
+.home_Two{
+ @apply lg:h-[29px] xl:h-[36px] 2xl:h-[41px] 3xl:h-[49px] lg:w-[28px] xl:w-[35px] 2xl:w-[40px] 3xl:w-[48px]; 
+}
+.numbercount2{
+ @apply lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] tracking-ls1; 
+}
+.price_One1{
+ @apply lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.OwnedfromProp1{
+ @apply font-semibold leading-[140.00%] lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] text-bluegray_600 tracking-ls1 w-[100%]; 
+}
+.numbercount03{
+ @apply lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] tracking-ls1 w-[auto]; 
+}
+.Dailycompleted1{
+ @apply font-semibold lg:mt-[19px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] text-bluegray_600 tracking-ls1 w-[auto]; 
+}
+.ButtonAnchor2{
+ @apply font-bold mt-[3px] text-orange_A700 w-[auto]; 
+}
+.location2{
+ @apply font-semibold mb-[2px] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] text-gray_900 w-[auto]; 
+}
+.test_1032sqft{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[2px] text-gray_700 w-[auto]; 
+}
+.description2{
+ @apply font-normal leading-[180.00%] lg:mt-[20px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] not-italic text-gray_700 w-[100%]; 
+}
+.point2{
+ @apply font-semibold mb-[1px] xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] text-gray_900 w-[auto]; 
+}
+.ProductManager1{
+ @apply font-semibold xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-gray_900 w-[auto]; 
+}
+.rowexploreall1{
+ @apply font-bold mt-[3px] text-deep_orange_400 w-[auto]; 
+}
+.blog1{
+ @apply font-bold leading-[135.00%] lg:mt-[22px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] text-white_A700 tracking-ls1 w-[95%]; 
+}
+.blog2{
+ @apply font-bold leading-[135.00%] lg:mt-[22px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] text-white_A700 tracking-ls1 w-[92%]; 
+}
+.blog3{
+ @apply font-bold leading-[135.00%] lg:mt-[22px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] text-white_A700 tracking-ls1 w-[97%]; 
+}
+.columnpoint{
+ @apply font-normal leading-[180.00%] lg:ml-[43px] xl:ml-[54px] 2xl:ml-[61px] 3xl:ml-[73px] lg:mt-[17px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] not-italic text-gray_700 w-[88%]; 
+}
+.Rectangle5596{
+ @apply lg:h-[201px] xl:h-[251px] 2xl:h-[283px] 3xl:h-[339px] rounded-radius10 lg:w-[200px] xl:w-[250px] 2xl:w-[282px] 3xl:w-[338px]; 
+}
+.KausarPial_One{
+ @apply font-semibold text-gray_900 tracking-ls1 w-[auto]; 
+}
+.MarketingCoord{
+ @apply font-normal xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] lg:mt-[8px] not-italic text-gray_700 w-[auto]; 
+}
+.MarketingCoord_One{
+ @apply font-normal 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] not-italic text-gray_700 w-[auto]; 
+}
+.Active{
+ @apply font-semibold mt-[1px] text-gray_700 w-[auto]; 
+}
+.close3{
+ @apply lg:h-[12px] xl:h-[15px] 2xl:h-[17px] 3xl:h-[20px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:w-[11px] xl:w-[14px] 2xl:w-[16px] 3xl:w-[19px]; 
+}
+.info{
+ @apply font-bold mb-[3px] lg:mt-[14px] xl:mt-[17px] 2xl:mt-[20px] 3xl:mt-[24px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.location8{
+ @apply font-semibold mb-[1px] lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] text-gray_900 w-[auto]; 
+}
+.test_3BedRoom1{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] text-gray_700 w-[auto]; 
+}
+.bookmark1{
+ @apply lg:h-[15px] xl:h-[18px] 2xl:h-[21px] 3xl:h-[25px] mb-[1px] lg:w-[14px] xl:w-[17px] 2xl:w-[20px] 3xl:w-[24px]; 
+}
+.test_1032sqft1{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] text-gray_700 w-[auto]; 
+}
+.listing{
+ @apply bg-white_A700 border border-bluegray_100 border-solid justify-start lg:pb-[21px] xl:pb-[26px] 2xl:pb-[30px] 3xl:pb-[36px] rounded-radius10 w-[100%]; 
+}
+.rowview_details_one{
+ @apply font-bold lg:ml-[21px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.rowview_details_two{
+ @apply font-bold text-gray_900 tracking-ls1 w-[auto]; 
+}
+.Outdoor{
+ @apply font-normal 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] mt-[1px] not-italic text-gray_600 w-[auto]; 
+}
+.reveiw{
+ @apply font-semibold xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] mt-[1px] text-gray_900 w-[auto]; 
+}
+.star{
+ @apply lg:h-[12px] xl:h-[15px] 2xl:h-[17px] 3xl:h-[20px] lg:w-[11px] xl:w-[14px] 2xl:w-[16px] 3xl:w-[19px]; 
+}
+.rowlatestproperty{
+ @apply mt-[1px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.Rectangle5614{
+ @apply lg:h-[201px] xl:h-[251px] 2xl:h-[283px] 3xl:h-[339px] rounded-bl-[0] rounded-br-[0] rounded-tl-[10px] rounded-tr-[10px] lg:w-[200px] xl:w-[250px] 2xl:w-[282px] 3xl:w-[338px]; 
+}
+.reveiw1{
+ @apply font-semibold mt-[1px] text-gray_900 w-[auto]; 
+}
+.phone{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[3px] text-gray_900 w-[auto]; 
+}
+.mail2{
+ @apply font-semibold mb-[1px] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-gray_900 w-[auto]; 
+}
+.columndescription_one{
+ @apply font-semibold leading-[165.00%] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-gray_600 w-[89%]; 
+}
+.rowreviewcounter_one{
+ @apply font-semibold mt-[2px] text-gray_600 tracking-ls1 w-[auto]; 
+}
+.Rectangle5617{
+ @apply lg:h-[249px] xl:h-[312px] 2xl:h-[351px] 3xl:h-[421px] rounded-radius8 w-[100%]; 
+}
+.titledate{
+ @apply font-bold leading-[135.00%] text-gray_900 tracking-ls1 w-[95%]; 
+}
+.Date{
+ @apply lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] text-gray_600 w-[auto]; 
+}
+.ButtonAnchor4{
+ @apply font-bold mt-[3px] text-gray_600 w-[auto]; 
+}
+.point8{
+ @apply font-normal leading-[180.00%] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] not-italic text-gray_600 w-[97%]; 
+}
+.list{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-gray_600 underline w-[auto]; 
+}
+.One{
+ @apply font-bold mb-[2px] text-gray_600 w-[auto]; 
+}
+.FlexibilityMo_Two{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[2px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-gray_600 underline w-[auto]; 
+}
+.code{
+ @apply font-normal not-italic text-gray_600 w-[auto]; 
+}
+.columnrecentnews{
+ @apply ml-[3px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.test_1Thetypeof{
+ @apply font-bold mt-[2px] text-gray_900 tracking-ls1 w-[auto]; 
+}
+.columnenterotp{
+ @apply font-normal lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] not-italic text-gray_900 w-[auto]; 
+}
+.rowabout{
+ @apply cursor-pointer font-manrope font-semibold lg:ml-[28px] xl:ml-[35px] 2xl:ml-[40px] 3xl:ml-[48px] mt-[1px] text-gray_900 w-[auto]; 
+}
+.rowhome_one{
+ @apply cursor-pointer font-manrope font-semibold text-gray_900 w-[auto]; 
+}
+.rowhome_two1{
+ @apply font-markoone font-normal 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] not-italic text-orange_A700 w-[auto]; 
+}
+.column59bervelyhill1{
+ @apply font-manrope font-semibold text-gray_900 w-[auto]; 
+}
+.Features{
+ @apply font-bold font-manrope text-gray_900 w-[auto]; 
+}
